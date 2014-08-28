@@ -17,15 +17,18 @@
  *= require_self
  */
 
-/*
-th {
+.menu-item-description {
+  margin-top: 30px;
+}
+
+.center-me {
   text-align: center;
 }
 
-td {
-  text-align: center;
+#item_quantity {
+  width: 26px;
+  margin-right: 20px;
 }
-*/
 
 .order-items {
   text-align: left;

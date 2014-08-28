@@ -4,7 +4,7 @@
   -@category.items.each do |item|
     .col-sm-6.col-md-4
       .thumbnail
-        %img{src: "#{item.image_file_name}"}
+        %img{:src => "#{item.image_file_name}"}
         .caption
           %h3= link_to "#{item.title}", item_path(item)
           %p=truncate(item.description, :length => 45)

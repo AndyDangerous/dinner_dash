@@ -63,7 +63,6 @@ group :test do
   gem 'database_cleaner'
   gem 'nyan-cat-formatter'
   gem "codeclimate-test-reporter", group: :test, require: nil
-
 end
 
 group :production do

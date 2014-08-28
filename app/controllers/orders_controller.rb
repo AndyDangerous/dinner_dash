@@ -1,10 +1,4 @@
 class OrdersController < ApplicationController
-  include OrdersHelper
-
-  def index
-    @orders = Order.all
-  end
-
   def show
   end
 
@@ -33,7 +27,7 @@ class OrdersController < ApplicationController
   end
 
   def checkout
-    @address = Address.find_by(order_id: order.id) || Address.new
+    @address = Address.find_by(order_id: order.id) || Address.create
   end
 
   def confirm
