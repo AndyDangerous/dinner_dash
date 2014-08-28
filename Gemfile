@@ -36,6 +36,7 @@ gem 'paperclip', "~> 4.1"
 
 # Use AASM as state machine
 gem 'aasm'
+gem 'thin'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
