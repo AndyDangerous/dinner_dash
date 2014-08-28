@@ -62,6 +62,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'nyan-cat-formatter'
+  gem "codeclimate-test-reporter", group: :test, require: nil
 end
 
 group :production do

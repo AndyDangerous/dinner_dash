@@ -10,11 +10,11 @@
   %br
 
 
-  = form_for order do |f|
-    =radio_button_tag("order_type", "pickup", order: true)
-    =label_tag(:order_pickup, "Pickup")
-    =radio_button_tag("order_type", "delivery")
-    =label_tag(:order_delivery, "Delivery")
+  = form_for order do |o|
+    =o.radio_button(:delivery, false)
+    =o.label(:order_pickup, "Pickup")
+    =o.radio_button(:delivery, true)
+    =o.label(:order_delivery, "Delivery")
   #delivery-address.panel-group.hidden
     .panel.panel-default
       .panel-heading
