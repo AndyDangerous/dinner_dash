@@ -40,14 +40,13 @@ gem 'thin'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'haml-rails'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
   gem 'capybara'
-  gem 'haml-rails'
   gem 'launchy'
   gem 'pry'
   gem 'binding_of_caller'
