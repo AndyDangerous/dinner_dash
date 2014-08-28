@@ -1,4 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/ericfransen/dinner_dash/badges/gpa.svg)](https://codeclimate.com/github/ericfransen/dinner_dash)
+[![Code Climate](https://codeclimate.com/github/ericfransen/dinner_dash/badges/gpa.svg)](https://codeclimate.com/github/ericfransen/dinner_dash)
 
 ```
                       I0 - Coming Soon!/ Wire Framing
