@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140827204720) do
+ActiveRecord::Schema.define(version: 20140826160552) do
 
   create_table "addresses", force: true do |t|
+    t.integer  "order_id"
     t.string   "street_1"
     t.string   "street_2"
     t.string   "city"
@@ -21,8 +22,9 @@ ActiveRecord::Schema.define(version: 20140827204720) do
     t.string   "zip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
   end
+
+  add_index "addresses", ["order_id"], name: "index_addresses_on_order_id"
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -63,7 +65,7 @@ ActiveRecord::Schema.define(version: 20140827204720) do
   end
 
   create_table "orders", force: true do |t|
-    t.boolean  "delivery",   limit: 255
+    t.string   "delivery"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
@@ -71,7 +73,6 @@ ActiveRecord::Schema.define(version: 20140827204720) do
     t.string   "ccn"
     t.string   "expdate"
     t.string   "card_name"
-    t.integer  "address_id"
   end
 
   add_index "orders", ["user_id"], name: "index_orders_on_user_id"

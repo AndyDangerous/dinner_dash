@@ -1,8 +1,8 @@
 class CreateOrders < ActiveRecord::Migration
   def change
     create_table :orders do |t|
-      t.string :get_order
-      
+      t.string :devlivery
+
       t.timestamps
     end
   end
